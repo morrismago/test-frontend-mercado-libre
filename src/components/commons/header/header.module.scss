@@ -1,0 +1,41 @@
+@import "../../../styles/index";
+
+.search_form {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-self: center;
+  padding: 6px 0 4px 0px;
+}
+
+.search_input {
+  width: 100%;
+  height: 36px;
+  border-radius: 2px 0 0px 2px;
+  font-size: 18px;
+  border: none;
+  color: $mercado-dark-gray;
+  padding: 0.2rem;
+  padding-left: 1rem;
+  margin-left: 22px;
+}
+
+.search_input:focus {
+    border-style: solid;
+    border-color: $mercado-blue;
+    border-width: 1.5px;
+}
+
+.search_button {
+  width: 3rem;
+  height: 36px;
+  background: $mercado-light-gray;
+  border: none;
+  font-size: 22px;
+  color: $mercado-gray;
+  cursor: pointer;
+  background-image: url("../../../../public/assets/img/ic_Search.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+

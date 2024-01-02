@@ -1,0 +1,88 @@
+@import "../../styles/index";
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: $spacing-16;
+  margin-top: $spacing-16;
+  margin-right: 0;
+  margin-bottom: $spacing-16;
+
+  img {
+    max-width: 180px;
+    max-height: 180px;
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  h1,
+  h2 {
+    font: inherit;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    margin: 0;
+    color:$mercado-dark-gray;
+  }
+
+  span {
+    justify-self: end;
+    padding-top: 2rem;
+    min-width: 7.5rem;
+    padding-right: 20px;
+  }
+
+}
+
+.item__general {
+  display: flex;
+  max-width: 70%;
+}
+
+.item__resume {
+  margin-left: 1rem;
+
+
+  span {
+    font-size: 12px;
+  }
+
+}
+
+.item__resume_title {
+
+  h1 {
+    display: inline-block;
+  }
+
+  img {
+    width:20px;
+    height: 20px;
+    max-width: 20px;
+    max-height: 20px;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .item__general {
+    max-width: auto;
+  }
+
+  .item span {
+    display: none;
+  }
+
+}

@@ -1,0 +1,16 @@
+@import "../../styles/index";
+
+.breadcrumb {
+    position: relative;
+    color: $mercado-gray;
+    margin-top: $spacing-16;
+    margin-bottom: $spacing-16;
+}
+
+.separator {
+    margin: 0 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
