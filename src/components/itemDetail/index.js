@@ -37,9 +37,9 @@ export default function ItemDetail({itemId}) {
          <meta property="og:description" content={`Detalles de ${item.title} | Página de detalle de producto`}  />
         </Head>
         <Breadcrumb categories={[category]}/>
-        {/* {loading ? ( 
+        {loading ? ( 
             <h2> Cargando...</h2>
-          ) : ( */}
+          ) : (
           <section className={styles.item_detail}>
               <div className={styles.item_detail__image}>
                 <img src={item.picture} alt={item.title} />
@@ -58,7 +58,7 @@ export default function ItemDetail({itemId}) {
                 <p>{item.description}</p>
               </div>
           </section>
-          {/* )} */}
+          )}
         </div>
     </>
   );
